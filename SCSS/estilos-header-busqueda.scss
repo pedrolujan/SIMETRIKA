@@ -1,0 +1,81 @@
+.ContenedorBuscarVentas {
+  margin-top: 5px;
+  background-color: #ffffff;
+  border-left: solid 3px #6f1e86;
+  border-bottom: dashed 1px #6f1e86;
+  border-radius: 5px;
+  div {
+    box-sizing: border-box;
+    border: none;
+    display: block;
+    label {
+      font-size: 14px;
+    }
+    input {
+    }
+    select {
+      padding: 5px;
+      border-radius: 3px;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+.contenedorExportarDatos {
+  display: block;
+  margin-bottom: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border-left: solid 3px #6f1e86;
+  border-bottom: dashed 1px #6f1e86;
+  padding-bottom: 10px;
+  h4 {
+    color: #2e2d2d;
+    font-size: 17px;
+    border-top: 1px solid #ebebeb;
+    padding: 3px;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 10px;
+  }
+  form {
+    div {
+      label {
+        background-color: #ebebeb;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border-radius: 5px;
+        border-left: 3px solid color("empresa");
+        cursor: pointer;
+        input {
+          background-color: burlywood;
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+        }
+        img {
+          margin-left: 5px;
+          height: 30px;
+          object-fit: scale-down;
+        }
+      }
+      button {
+        background-color: #6f1e86;
+        padding: 8px 20px;
+        img {
+        }
+      }
+    }
+    @media screen and(max-width: 950px) {
+      div {
+        label {
+          display: flex;
+          justify-content: end;
+        }
+      }
+    }
+  }
+}

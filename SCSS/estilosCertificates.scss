@@ -1,0 +1,31 @@
+@import "variables/colores.scss", "variables/funciones.scss",
+  "variables/botones.scss";
+.main {
+  .addFixedherder {
+    background-color: #323639;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    // height: 90px;
+    h5{
+      background-color: #323639 !important;
+      color: white !important;
+    }
+    button{
+      background-color: white !important;
+      &:hover{
+      color: red;
+      }
+    }
+    
+  }
+  .contenedorLienzo{
+    margin-top: 90px;
+  }
+  @media only screen and (max-width: 768px) {
+    .contenedorLienzo{
+      margin-top: 150px;
+    }
+  }
+}

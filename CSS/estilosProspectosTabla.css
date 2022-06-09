@@ -1,0 +1,292 @@
+@font-face {
+  font-family: roboto;
+  src: url("../../fuentes/Roboto-Black.ttf");
+}
+
+/* * {
+  font-family: roboto;
+} */
+body {
+  background-color: #fafafa;
+}
+
+#Mensajes {
+  display: block;
+  position: fixed;
+  z-index: 200;
+  top: auto;
+  bottom: 0;
+  width: 30%;
+  padding: 10px 20px;
+  color: #ebebeb;
+  background-color: #631005;
+  right: 0;
+  text-align: left;
+}
+
+.container {
+  padding: 0 5px;
+  color: #0c0c0c;
+  position: relative;
+}
+
+.container .contenedorBuscarGeneral {
+  background-color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 5px;
+}
+
+.container .contenedorBuscarGeneral .contenedorbuscar {
+  border: none;
+  display: block;
+  border-radius: 5px;
+}
+
+.container .contenedorBuscarGeneral .contenedorbuscar legend {
+  font-size: 18px;
+  background-color: #ececec;
+}
+
+.container .contenedorBuscarGeneral .contenedorbuscar .form-check {
+  padding: 2px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.container .contenedorBuscarGeneral .contenedorbuscar .form-check div {
+  margin-top: 5px;
+  background-color: #ffffff;
+  border-left: solid 3px #6f1e86;
+  border-radius: 5px;
+}
+
+.container .contenedorBuscarGeneral .contenedorbuscar .form-check div div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  display: block;
+}
+
+.container .contenedorBuscarGeneral .contenedorbuscar .form-check div div label {
+  font-size: 14px;
+}
+
+.container .contenedorBuscarGeneral .contenedorbuscar .form-check div div select {
+  padding: 5px;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.container .contenedorBuscarGeneral form button {
+  background-color: #7b3090;
+  color: beige;
+  padding: 8px 30px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+.container .contenedorBuscarGeneral form button img {
+  border: none;
+  background: #7b3090;
+  margin-right: 5px;
+  width: 22px;
+  height: 22px;
+}
+
+#conten_cargar_datos {
+  position: relative;
+  width: 100%;
+  top: 5px;
+  padding: 0;
+}
+
+#conten_cargar_datos .contenedorExportarDatos {
+  display: block;
+  margin-bottom: 5px;
+  background-color: #ebebeb;
+  padding-bottom: 10px;
+}
+
+#conten_cargar_datos .contenedorExportarDatos h4 {
+  color: #2e2d2d;
+  font-size: 17px;
+  border-top: 1px solid #ebebeb;
+  padding: 3px;
+  font-weight: normal;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#conten_cargar_datos .contenedorExportarDatos form div label {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  border-left: 3px solid #7b3090;
+  cursor: pointer;
+}
+
+#conten_cargar_datos .contenedorExportarDatos form div label input {
+  background-color: burlywood;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+#conten_cargar_datos .contenedorExportarDatos form div label img {
+  margin-left: 5px;
+  height: 30px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+#conten_cargar_datos .contenedorExportarDatos form div button {
+  background-color: #6f1e86;
+  padding: 8px 20px;
+}
+
+@media screen and (max-width: 950px) {
+  #conten_cargar_datos .contenedorExportarDatos form div label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+
+#conten_cargar_datos #contenedorContador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  right: 5px;
+  border-bottom: solid 2px #6f1e86;
+  background-color: #ebebeb;
+  padding: 5px;
+  top: 80px;
+  z-index: 20;
+  left: auto;
+}
+
+#conten_cargar_datos #contenedorContador .contTexto {
+  color: #6f1e86;
+}
+
+#conten_cargar_datos #contenedorContador .contador, #conten_cargar_datos #contenedorContador .contenBtnAdd {
+  background-color: #6f1e86;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: #ebebeb;
+  margin-left: 7px;
+  font-size: 12px;
+}
+
+#conten_cargar_datos #contenedorContador .contador {
+  font-size: 10px;
+}
+
+#conten_cargar_datos #contenedorContador .contenBtnAdd {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background: #1e73be;
+}
+
+#conten_cargar_datos #contenedorContador .contenBtnAdd:hover {
+  width: 30px;
+  height: 30px;
+}
+
+#conten_cargar_datos #tabla {
+  font-size: 16px;
+  width: 100%;
+  margin: auto;
+  overflow: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#conten_cargar_datos #tabla thead {
+  color: whitesmoke;
+  letter-spacing: 2px;
+  width: 100%;
+  padding: 10px;
+}
+
+#conten_cargar_datos #tabla thead tr th {
+  padding: 10px 20px;
+  background: #6f1e86;
+  font-weight: normal;
+}
+
+#conten_cargar_datos #tabla tbody tr .tdNumero {
+  width: 70px;
+  text-align: center;
+}
+
+#conten_cargar_datos #tabla tbody tr td {
+  width: 20%;
+  padding: 5px 0px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#conten_cargar_datos #tabla tbody tr .tdSeguimiento {
+  width: 70px;
+  text-align: center;
+}
+
+#conten_cargar_datos .contenPaginacion {
+  width: auto;
+}
+
+#conten_cargar_datos .contenPaginacion span {
+  display: block;
+  color: #4e4e4e;
+  margin-bottom: -10px;
+  border-bottom: dashed 1px #c7c6c6;
+}
+
+#mensajes {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20px;
+  width: auto;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=estilosProspectosTabla.css.map */

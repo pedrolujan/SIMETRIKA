@@ -1,0 +1,208 @@
+@import "variables/colores.scss", "variables/funciones.scss",
+  "variables/botones.scss", "variables/fuentes.scss";
+.main {
+  background: none;
+}
+.contenedorGeneralPersonal {
+  /* 
+ .contenedorDatos{
+     background-color: rgb(230, 230, 230);
+     &:hover{
+        background-color: rgb(199, 199, 198);
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: scale-down;        
+    }
+    span{
+        font-size: 22px;
+    }
+ } */
+
+  .contenedor-personal {
+    width: 100%;
+    .contenedor-titulo-controles {
+      display: flex;
+      margin: 0px;
+      padding: 0px auto;
+      justify-content: space-between;
+      align-items: end;
+      h3 {
+        padding: 0px;
+        margin: 0px;
+        color: color("empresa");
+        font-size: 20px;
+        border-bottom: 0.01px dashed color("empresa");
+      }
+      .indicadores {
+        button {
+          background: rgb(194, 194, 194);
+          height: 3px;
+          width: 10px;
+          cursor: pointer;
+          border: none;
+          margin-right: 2px;
+          outline: none;
+          &:hover,
+          &:active {
+            background-color: color("empresa");
+          }
+        }
+        .activo {
+          background-color: color("empresa");
+        }
+      }
+    }
+    .contenedor-personal-carrusel {
+      display: flex;
+      align-items: center;
+      padding: 0px 10px;
+      position: relative;
+
+      .flecha-izquierda,
+      .flecha-derecha {
+        position: absolute;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.3);
+        font-size: 20px;
+        height: 50%;
+        top: calc(50% - 25%);
+        line-height: 40px;
+        width: 30px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 20;
+        outline: none;
+        transition: 0.2s ease all;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+      }
+
+      .flecha-izquierda {
+        left: 0;
+      }
+      .flecha-derecha {
+        right: 0;
+      }
+      .contenedor-carrusel-items {
+        width: 100%;
+        padding: 0px;
+        overflow: hidden;
+        scroll-behavior: smooth;
+
+        .contenedor-items {
+          //   background-color: aquamarine;
+          display: flex;
+          justify-content: space-between;
+          box-sizing: border-box;
+          .car-items {
+            transition: 0.3 ease all;
+            box-sizing: border-box;
+            border: solid 1px rgb(180, 180, 180);
+            border-left: solid 5px color("empresa");
+            border-bottom: solid 2px color("empresa");
+            background: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            .contenedorDatos {
+              div {
+                img {
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  object-fit: scale-down;
+                }
+              }
+              div {
+                span {
+                  font-size: 22px;
+                }
+              }
+            }
+          }
+          .hover {
+            transform: scale(1.03);
+            transform-origin: center;
+          }
+          .activo {
+            background-color: rgba(105, 105, 105, 0.521);
+            color: #fff;
+          }
+          @media only screen and (max-width: 768px) {
+            .car-items {
+              .contenedorDatos {
+                div {
+                  span {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // .contenedorCampanias {
+  //   margin: 0px;
+  //   box-sizing: border-box;
+  //   border-radius: 5px;
+  //   div {
+  //     box-sizing: border-box;
+  //     border: none;
+  //     display: block;
+  //     label {
+  //       font-size: 14px;
+  //     }
+  //     input {
+  //     }
+  //     select {
+  //       padding: 5px;
+  //       border-radius: 3px;
+  //       outline: none;
+  //       cursor: pointer;
+  //     }
+  //   }
+  // }
+}
+.group-nav {
+  div {
+    ul {
+      li {
+        a {
+          color: color("empresa");
+        }
+      }
+    }
+  }
+}
+#group-contenedor-dat-personal {
+  background-color: rgb(255, 255, 255) !important;
+  div {
+    div {
+      div {
+      }
+    }
+  }
+  #ventas {
+    div {
+      div {
+        label {
+          font-size: 14px;
+          margin: 0px;
+        }
+        input {
+        }
+      }
+      .group-exportar {
+        button{
+          background-color: color("empresa");
+        }
+      }
+    }
+  }
+}

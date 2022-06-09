@@ -1,0 +1,37 @@
+@function color($nombre) {
+  @return map-get($map: $paleta, $key: $nombre);
+}
+
+$anchoColapsado:80px;
+$anchoExpandido: 300px;
+
+
+@mixin Responsive($taman, $w) {
+  @if $taman== "pc" {
+    @media screen and (max-width: 1050px) {
+        margin-left: $w;
+        
+    }
+
+  }
+  @if $taman== "laptop" {
+    @media screen and (max-width: 950px) {
+        margin-left: $w;
+    }
+
+  }
+  @if $taman== "ipad" {
+    @media screen and (max-width: 768px) {
+        margin-left: $w;
+       
+        
+    }
+
+  }
+  @if $taman== "iphone" {
+    @media screen and (max-width: 667px) {
+        margin-left: $w;
+    }
+
+  }
+}

@@ -1,0 +1,397 @@
+@import "variables/colores.scss", "variables/funciones.scss",
+  "variables/botones.scss";
+* {
+  box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
+}
+.contenedorProspecto {
+  background-color: #ede7f6;
+  .contenThemePorspecto {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #fff;
+    padding: 10px 0px;
+    h2 {
+      color: color("empresa");
+      font-weight: bold;
+      padding: 5px;
+    }
+    div {
+      div {
+        img {
+          width: 100%;
+          object-fit: scale-down;
+        }
+        .img_campaña {
+        }
+      }
+      .contenedor-datosEvento {
+        position: fixed;
+        left: 25%;
+        z-index: 5;
+        bottom: 10%;
+        width: 200px;
+
+        .img_expositor {
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+  }
+  .contenedorFormProspecto {
+    position: relative;
+    margin-left: 42%;
+    padding: 0px;
+    .contenedor_formulario {
+      .row {
+        width: 100%;
+        padding: 0px;
+        margin: 10px 0px 0px 0px;
+        .contenGeneralImg {
+          width: 100%;
+          padding: 0px;
+          margin: 0px;
+          .contenImg {
+            width: 100%;
+            img {
+              width: 100%;
+              margin: 0px;
+              border: solid 1px rgb(163, 162, 162);
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+      .contenGeneralInfo {
+        background-color: #fff;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        padding: 15px 15px;
+        box-sizing: border-box;
+        border-top: solid 10px color("empresa");
+        .contenInfoEvento {
+          .titulo_evento {
+            font-size: 32px;
+            font-weight: 400;
+            color: #202124;
+            margin-bottom: 3px;
+          }
+          .DescripcionEvento {
+            white-space: pre-line;
+            display: block;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+            line-height: 20px;
+            color: #202124;
+            margin-top: 0px;
+            padding: 10px;
+          }
+          @media screen and (max-width: 768px) {
+            .titulo_evento {
+              font-size: 21px;
+            }
+            .DescripcionEvento {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .divCaja {
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-top: solid 1px color("celesteOpaco");
+        background-color: rgb(255, 255, 255);
+        border-radius: 8px;
+        padding: 20px 15px;
+        width: 100%;
+        div {
+          span {
+          }
+          input {
+            border: none;
+            outline: none;
+            border-bottom: 1px solid rgb(173, 173, 173);
+            width: 50%;
+            padding: 5px;
+            font-size: 14px;
+          }
+        }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        input:focus {
+          border-bottom: 2px solid color("empresa");
+        }
+
+        span {
+          font-size: 16px;
+          font-family: Roboto, Arial, sans-serif;
+          font-weight: bold;
+          letter-spacing: 0.1px;
+          line-height: 24px;
+          color: #555555;
+          font-weight: 400;
+          width: auto;
+          word-break: break-word;
+          margin-bottom: 5px;
+          display: block;
+        }
+        .inputErrpor {
+          border-bottom: solid 2px #dc3545;
+        }
+        .inputExito {
+          border-bottom: solid 2px #28a745;
+        }
+        .comboError {
+          border: solid 10px #dc3545;
+        }
+        .comboExito {
+          border: solid 10px #28a745;
+        }
+        .mensaje {
+          font-size: 12px;
+          margin-top: -10px;
+          margin-left: 10px;
+          display: none;
+        }
+        .mensaje-exito {
+          display: none;
+          background-color: #28a745;
+        }
+        .mensaje-error {
+          display: block;
+          color: #dc3545;
+        }
+        .mensaje-errorExistente {
+          display: block;
+          color: #28a745;
+        }
+        .datosPersonales {
+          align-items: center;
+          input {
+            width: 90%;
+          }
+          select {
+            border: none;
+            border: 1px solid rgb(173, 173, 173);
+            border-radius: 2px;
+            outline: none;
+            width: 80%;
+            padding: 5px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 5px;
+          }
+          .CodigoPais {
+            border-bottom: 1px solid rgb(173, 173, 173);
+            padding: 5px 0px;
+            font-size: 14px;
+          }
+          #txtNumCelular {
+            width: 50%;
+          }
+        }
+        .ContenRadios {
+          display: block;
+          .contenChecks {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            .cheks {
+              width: 40px;
+              height: 15px;
+              display: block;
+            }
+            label {
+              display: block;
+              text-align: left;
+              width: 100%;
+            }
+          }
+        }
+        @media screen and (max-width: 768px) {
+          padding: 20px 10px;
+          .formulario__grupo-input {
+            margin: 0px;
+            padding: 0px;
+            input {
+              width: 90%;
+            }
+          }
+          div {
+            padding: 0px;
+          }
+          .datosPersonales {
+            margin: 0px;
+            width: 100%;
+            padding: 0px;
+            .formulario__grupo-input {
+              margin: 0px;
+              padding: 0px;
+              #txtNumCelular {
+                width: 100%;
+              }
+              input {
+                width: 90%;
+              }
+            }
+          }
+        }
+      }
+
+      .icon-estado {
+        color: #dc3545;
+      }
+      .OtraRespuesta {
+        display: none;
+      }
+      .OtraRespuesta-activo {
+        display: block;
+      }
+
+      .datoscorrecto .formulario__validacion-estado {
+        color: #28a745;
+        opacity: 1;
+      }
+      .datoscorrecto .icon-estado {
+        color: #28a745;
+        opacity: 1;
+      }
+      .formulario__input-error-activo {
+        display: block;
+        color: #dc3545;
+      }
+      .datoscorrecto .OtraRespuesta-activo {
+        display: block;
+      }
+
+      .datosIncorrectos .formulario__validacion-estado {
+        color: #dc3545;
+        opacity: 1;
+      }
+
+      .Seeeeee {
+        background-color: #28a745;
+      }
+      .datosIncorrectos {
+        .icon-estado {
+          color: #dc3545;
+          opacity: 1;
+        }
+      }
+      .contenBoton {
+        text-align: center;
+        .subContenBoton {
+          display: flex;
+          justify-content: center;
+          #btn_guardar {
+            @include Botones(5px, 40px);
+          }
+        }
+        .respuestaOk {
+          display: block;
+          color: #0dad0d;
+          width: 100%;
+          font-size: 16px;
+          padding: 5px;
+          text-align: center;
+          background: rgba(0, 255, 0, 0.1);
+          margin-bottom: 20px;
+        }
+        .respuestaError {
+          display: block;
+          color: #dd0606;
+          font-size: 16px;
+          padding: 5px;
+          display: none;
+          width: 100%;
+          text-align: center;
+          background: rgba(255, 1, 1, 0.1);
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    @include Responsive("pc", 40%);
+    @include Responsive("laptop", 0px);
+    @include Responsive("ipad", 0px);
+    @include Responsive("iphone", 0px);
+  }
+}
+.formulario__validacion-estado {
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0;
+}
+
+.bodyGracias {
+  background-color: #ede7f6;
+  display: flex;
+  padding: 10%;
+  justify-content: center;
+  align-items: center;
+  .contenGracias {
+    margin: auto;
+
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10%;
+    h1 {
+      color: #ae1dff;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 40px;
+    }
+    h4 {
+      color: #156bf4;
+    }
+    h5,
+    p {
+      color: #668fd1;
+    }
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 30px;
+      }
+      h4 {
+        font-size: 20px;
+      }
+      h5,
+      p {
+        font-size: 14px;
+      }
+    }
+    @media screen and (max-width: 668px) {
+      h1 {
+        font-size: 30px;
+      }
+      h4 {
+        font-size: 20px;
+      }
+      h5,
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+.itemsOcultar {
+  display: none ;
+}
+.itemsMostrar {
+  display: block ;
+}

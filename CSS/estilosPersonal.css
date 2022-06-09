@@ -1,0 +1,192 @@
+@font-face {
+  font-family: roboto;
+  src: url("../../fuentes/Roboto-Black.ttf");
+}
+
+.main {
+  background: none;
+}
+
+.contenedorGeneralPersonal {
+  /* 
+ .contenedorDatos{
+     background-color: rgb(230, 230, 230);
+     &:hover{
+        background-color: rgb(199, 199, 198);
+    }
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: scale-down;        
+    }
+    span{
+        font-size: 22px;
+    }
+ } */
+}
+
+.contenedorGeneralPersonal .contenedor-personal {
+  width: 100%;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-titulo-controles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+  padding: 0px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-titulo-controles h3 {
+  padding: 0px;
+  margin: 0px;
+  color: #7b3090;
+  font-size: 20px;
+  border-bottom: 0.01px dashed #7b3090;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-titulo-controles .indicadores button {
+  background: #c2c2c2;
+  height: 3px;
+  width: 10px;
+  cursor: pointer;
+  border: none;
+  margin-right: 2px;
+  outline: none;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-titulo-controles .indicadores button:hover, .contenedorGeneralPersonal .contenedor-personal .contenedor-titulo-controles .indicadores button:active {
+  background-color: #7b3090;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-titulo-controles .indicadores .activo {
+  background-color: #7b3090;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-personal-carrusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 10px;
+  position: relative;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-personal-carrusel .flecha-izquierda,
+.contenedorGeneralPersonal .contenedor-personal .contenedor-personal-carrusel .flecha-derecha {
+  position: absolute;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  height: 50%;
+  top: calc(50% - 25%);
+  line-height: 40px;
+  width: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 20;
+  outline: none;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-personal-carrusel .flecha-izquierda:hover,
+.contenedorGeneralPersonal .contenedor-personal .contenedor-personal-carrusel .flecha-derecha:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-personal-carrusel .flecha-izquierda {
+  left: 0;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-personal-carrusel .flecha-derecha {
+  right: 0;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-personal-carrusel .contenedor-carrusel-items {
+  width: 100%;
+  padding: 0px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-personal-carrusel .contenedor-carrusel-items .contenedor-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-personal-carrusel .contenedor-carrusel-items .contenedor-items .car-items {
+  -webkit-transition: 0.3 ease all;
+  transition: 0.3 ease all;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid 1px #b4b4b4;
+  border-left: solid 5px #7b3090;
+  border-bottom: solid 2px #7b3090;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-personal-carrusel .contenedor-carrusel-items .contenedor-items .car-items .contenedorDatos div img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-personal-carrusel .contenedor-carrusel-items .contenedor-items .car-items .contenedorDatos div span {
+  font-size: 22px;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-personal-carrusel .contenedor-carrusel-items .contenedor-items .hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.contenedorGeneralPersonal .contenedor-personal .contenedor-personal-carrusel .contenedor-carrusel-items .contenedor-items .activo {
+  background-color: rgba(105, 105, 105, 0.521);
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedorGeneralPersonal .contenedor-personal .contenedor-personal-carrusel .contenedor-carrusel-items .contenedor-items .car-items .contenedorDatos div span {
+    font-size: 14px;
+  }
+}
+
+.group-nav div ul li a {
+  color: #7b3090;
+}
+
+#group-contenedor-dat-personal {
+  background-color: white !important;
+}
+
+#group-contenedor-dat-personal #ventas div div label {
+  font-size: 14px;
+  margin: 0px;
+}
+
+#group-contenedor-dat-personal #ventas div .group-exportar button {
+  background-color: #7b3090;
+}
+/*# sourceMappingURL=estilosPersonal.css.map */

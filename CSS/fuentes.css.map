@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU;EACN,WAAW,EAAE,MAAM;EACnB,GAAG,EAAE,qCAAqC",
+    "sources": [
+        "../SCSS/variables/fuentes.scss"
+    ],
+    "names": [],
+    "file": "fuentes.css"
+}

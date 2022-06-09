@@ -1,0 +1,45 @@
+#tabla {
+  font-size: 16px;
+  width: 100%;
+}
+
+#tabla thead {
+  color: whitesmoke;
+  width: 100%;
+  padding: 10px;
+}
+
+#tabla thead tr {
+  background: #6f1e86;
+  width: 100%;
+  /* .campoNombre{
+          width: 90px;
+        } */
+}
+
+#tabla thead tr th {
+  width: 22%;
+  padding: 10px 20px;
+  /* width: 21%; */
+  font-weight: normal;
+  height: 30px;
+  overflow: hidden;
+  border: solid 1px #86309e !important;
+}
+
+#tabla tbody tr td {
+  padding: 5px 5px;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+  border: solid 1px #e9e9e9;
+}
+
+#tabla tbody tr .tdAling {
+  text-align: left;
+}
+
+#tabla tbody tr .campoNombre {
+  width: 90px;
+}
+/*# sourceMappingURL=estilosTabla.css.map */

@@ -1,0 +1,41 @@
+
+@mixin Botones($py,$px) {
+        display: block;
+        padding: $py $px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        background-image: linear-gradient(to right, color("empresa") ,color("celeste"), color("empresa") );
+        background-size: 200%;
+        font-size: 1.2rem;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        margin: 1rem 0;
+        cursor: pointer;
+        transition: .5s;
+        &:hover{
+            background-position: right;
+        }
+        
+    
+}
+@mixin BotonFormal($py,$px,$b) {
+    display: block;
+    padding: $py $px;
+    border-radius: $b;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, color("empresa") ,color("celeste"), color("empresa") );
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+    &:hover{
+        background-position: right;
+    }
+}

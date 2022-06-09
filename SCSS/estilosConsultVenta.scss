@@ -1,0 +1,66 @@
+/*# sourceMappingURL=estilosConsultVenta.css.map */
+#mainVentas {
+	#formulario-Consultventas {
+		div {
+            background-color: rgb(240, 240, 240);
+			h6 {
+				background-color: #dadada;
+				padding: 5px;
+				border-radius: 5px;
+				color: #7b3090;
+				border: solid 1px #7b3090;
+			}
+			div {
+				border: none;
+				div {
+					p {
+						font-weight: 600;
+						font-size: 16px;
+						color: #666666;
+						margin-bottom: 0px;
+					}
+					input {
+						border: none;
+						outline: none;
+						border-bottom: solid 1px #1e73be;
+						background: none;
+						color: #3d3d3d;
+						font-size: 14px;
+					}
+				}
+			}
+			.conten-boton {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: end;
+				-ms-flex-pack: end;
+				justify-content: flex-end;
+				a {
+					display: block;
+					padding: 5px 0px;
+					border-radius: 10px;
+					outline: none;
+					border: solid 1px #7b3090;
+					font-size: 12px;
+					color: #7b3090;
+					font-family: "Poppins", sans-serif;
+					text-transform: uppercase;
+					margin: 1rem 0;
+					cursor: pointer;
+					-webkit-transition: 0.5s;
+					transition: 0.5s;
+					margin-right: 10px;
+					span {
+						font-size: 14px;
+						margin-right: 2px;
+					}
+					&:hover {
+						background-color: #7b3090;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}

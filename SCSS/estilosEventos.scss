@@ -1,0 +1,24 @@
+@import "variables/colores.scss", "variables/funciones.scss",
+  "variables/botones.scss";
+.main {
+  .groupGeneral-sia {
+    .SIA_Ev-group {
+      div {
+        a {
+            border-bottom: 1px solid blue;
+            color: color("empresa");
+          span {
+            background-color: color("empresa");
+            color: #fff;
+            padding: 6px;
+            text-align: center;position: relative;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,630 @@
+@import "variables/colores.scss", "variables/funciones.scss",
+  "variables/botones.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", "sans-serif";
+}
+#nav-toggle {
+  display: none;
+}
+#nav-toggle:checked {
+  + .sidebar {
+    width: 80px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100% - 80px);
+    //   &::-webkit-scrollbar {
+    //     display: none;
+    // }
+    &::-webkit-scrollbar {
+      width: 12px; /* width of the entire scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgb(255, 255, 255); /* color of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: color("empresa"); /* color of the scroll thumb */
+      border-radius: 50px; /* roundness of the scroll thumb */
+      border: 4px solid rgb(255, 255, 255); /* creates padding around scroll thumb */
+    }
+
+    // .sidebar-brand {
+    //   padding-left: 1rem;
+    //   text-align: center;
+    //   .nom-simetrika {
+    //     display: none;
+    //   }
+    //   label {
+    //     display: block;
+    //     width: 80%;
+    //     text-align: center;
+    //     margin-left: -20px;
+    //     span {
+    //       display: block;
+    //       width: 100%;
+    //       font-size: 35px;
+    //     }
+    //   }
+    // }
+    ul {
+      // background-color: chartreuse;
+
+      li {
+        // padding-left: 1rem;
+        text-align: center;
+        border-bottom: dashed 1px rgb(187, 166, 212);
+        a {
+          padding-left: 0;
+          span {
+          }
+          .name {
+            display: none;
+          }
+          .select {
+            float: right;
+          }
+        }
+      }
+    }
+    .sidebar-menu {
+    }
+  }
+  ~ header {
+    // width: calc(100% - 80px);
+    width: 100%;
+    // left: 80px;
+    margin-left: 0px;
+    .sidebar-brand {
+      .nom-simetrika {
+        display: none;
+      }
+      label {
+        display: block;
+        width: 80%;
+        text-align: center;
+        margin-left: -10px;
+        span {
+          display: block;
+          width: 100%;
+          font-size: 30px;
+        }
+      }
+      .logo-empresa {
+        margin-left: 20px;
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+  ~ .main {
+    width: calc(100% - 80px);
+    margin-left: 80px;
+  }
+}
+
+.sidebar {
+  width: $anchoExpandido;
+  position: fixed;
+  left: 0;
+  top: 80px;
+  height: calc(100% - 80px);
+  background: color("empresa");
+  z-index: 250;
+  overflow-y: auto;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255); /* color of the tracking area */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: color("empresa"); /* color of the scroll thumb */
+    border-radius: 50px; /* roundness of the scroll thumb */
+    border: 4px solid rgb(255, 255, 255); /* creates padding around scroll thumb */
+  }
+  // .sidebar-brand {
+  //   height: 80px;
+  //   padding: 1rem 0 1rem 2rem;
+  //   color: #fff;
+  //   display: flex;
+  //   justify-content: space-around;
+  //   background-color: rgb(255, 255, 255);
+  //   align-items: center;
+
+  //   span {
+  //     color: color("empresa");
+  //     font-size: 2rem;
+  //     cursor: pointer;
+  //   }
+  //   label {
+  //     display: block;
+  //     align-items: flex-end;
+  //     span {
+  //       font-size: 2rem;
+  //       margin-top: 10px;
+  //     }
+  //   }
+  // }
+  .sidebar-menu {
+    // margin-top: 1rem;
+    ul {
+      // background-color: brown;
+      li {
+        display: block;
+        width: 100%;
+        // margin-bottom: 1.7rem;
+        // background-color: aqua;
+        // padding-left: 1rem;
+        border-bottom: dashed 1px rgb(187, 166, 212);
+        a {
+          display: flex;
+          color: #fff;
+          text-decoration: none;
+          // background-color: blue;
+          align-items: center;
+          font-size: 1.1rem;
+          transition: all 0.6s;
+          &:hover {
+            background-color: rgb(134, 102, 172);
+          }
+          div {
+            padding: 10px;
+            width: 90%;
+            display: inline-flex;
+            align-items: center;
+            &:last-child {
+              width: 10%;
+              display: block;
+              float: right;
+            }
+            span {
+              font-size: 25px;
+            }
+            .name {
+              font-size: 1.2rem;
+              padding-left: 1rem;
+            }
+            .select {
+              display: block;
+              font-size: 12px;
+              float: right;
+            }
+          }
+        }
+        .hover {
+          background-color: rgba(142, 77, 160, 0.63);
+          padding-top: 0.8rem;
+          padding-bottom: 0.8rem;
+          color: #fff;
+          border-radius: 30px 0 0 30px;
+        }
+        // .activo {
+        //   background-color: rgb(245, 245, 245);
+        //   padding-top: 0.8rem;
+        //   padding-bottom: 0.8rem;
+        //   color: color("empresa");
+        //   border-radius: 30px 0 0 30px;
+        // }
+        .children {
+          display: none;
+          background: rgb(76, 26, 90);
+          position: relative;
+          width: 100%;
+          z-index: 10;
+          li {
+            a {
+              div {
+                padding-left: 20px;
+                span {
+                  font-size: 15px;
+                }
+                .name {
+                }
+                .select {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.main {
+  position: relative;
+  margin-left: 300px;
+  margin-top: 80px;
+  padding: 5px 0px;
+  width: calc(100% - 300px);
+  z-index: 1;
+}
+
+@media only screen and(max-width: 900px) {
+  .main {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 200px;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    height: calc(100% - 80px);
+    background: color("empresa");
+    z-index: 250;
+    // .sidebar-brand {
+    //   height: 80px;
+    //   padding: 1rem 0 1rem 2rem;
+    //   color: #fff;
+    //   display: flex;
+    //   justify-content: space-around;
+    //   background-color: rgb(255, 255, 255);
+    //   align-items: center;
+
+    //   span {
+    //     color: color("empresa");
+    //     font-size: 2rem;
+    //     cursor: pointer;
+    //   }
+    //   label {
+    //     display: block;
+    //     align-items: flex-end;
+    //     span {
+    //       font-size: 2rem;
+    //       margin-top: 10px;
+    //     }
+    //   }
+    // }
+    .sidebar-menu {
+      // margin-top: 1rem;
+      ul {
+        // background-color: brown;
+        li {
+          display: block;
+          width: 100%;
+          // margin-bottom: 1.7rem;
+          // background-color: aqua;
+          // padding-left: 1rem;
+          border-bottom: dashed 1px rgb(187, 166, 212);
+          a {
+            display: flex;
+            color: #fff;
+            text-decoration: none;
+            // background-color: blue;
+            align-items: center;
+            font-size: 1.1rem;
+            transition: all 0.6s;
+            &:hover {
+              background-color: rgb(134, 102, 172);
+            }
+            div {
+              padding: 10px;
+              width: 90%;
+              display: inline-flex;
+              align-items: center;
+              &:last-child {
+                width: 10%;
+                display: block;
+                float: right;
+              }
+              span {
+                font-size: 25px;
+              }
+              .name {
+                font-size: 1.2rem;
+                padding-left: 1rem;
+              }
+              .select {
+                display: block;
+                font-size: 12px;
+                float: right;
+              }
+            }
+          }
+          .hover {
+            background-color: rgba(142, 77, 160, 0.63);
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+            color: #fff;
+            border-radius: 30px 0 0 30px;
+          }
+          // .activo {
+          //   background-color: rgb(245, 245, 245);
+          //   padding-top: 0.8rem;
+          //   padding-bottom: 0.8rem;
+          //   color: color("empresa");
+          //   border-radius: 30px 0 0 30px;
+          // }
+          .children {
+            display: none;
+            background: rgb(76, 26, 90);
+            position: relative;
+            width: 100%;
+            z-index: 10;
+            li {
+              a {
+                div {
+                  padding-left: 20px;
+                  span {
+                    font-size: 15px;
+                  }
+                  .name {
+                  }
+                  .select {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #nav-toggle:checked {
+    + .sidebar {
+      display: none;
+
+      ul {
+        li {
+          padding-left: 1rem;
+          text-align: center;
+          font-size: 5px;
+          a {
+            padding-left: 0;
+            span {
+              &:last-child {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      .sidebar-menu {
+      }
+    }
+    ~ header {
+      width: 100%;
+      left: 0px;
+      .logo-empresa {
+        img {
+          display: block;
+        }
+      }
+    }
+    ~ .main {
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
+}
+
+@media only screen and(min-width: 1900px) {
+  .main {
+    max-width: calc(1800px - 300px);
+    left: -135px;
+  }
+  header {
+    max-width: 1800px;
+  }
+  .sidebar {
+    position: relative;
+    top: 80px;
+
+    left: 150px;
+    height: calc(100% - 80px);
+    bottom: 0px;
+  }
+  #nav-toggle:checked {
+    + .sidebar {
+      width: 80px;
+      left: 140px;
+      height: calc(100% - 80px);
+      ul {
+        li {
+          // text-align: center;
+          // border-bottom: dashed 1px rgb(187, 166, 212);
+          a {
+            padding-left: 0;
+            span {
+            }
+            .name {
+              display: none;
+            }
+            .select {
+              float: right;
+            }
+          }
+        }
+      }
+      .sidebar-menu {
+      }
+    }
+    ~ header {
+      .sidebar-brand {
+        .nom-simetrika {
+          display: none;
+        }
+        label {
+          span {
+          }
+        }
+        .logo-empresa {
+          img {
+          }
+        }
+      }
+    }
+    ~ .main {
+      // width: calc(100% - 80px);
+      max-width: calc(1800px - 112px);
+      margin-left: 310px;
+    }
+  }
+}
+// @media only screen and(max-width: 768px) {
+//   .main {
+//     position: relative;
+//     margin-left: 0px;
+//     margin-top: 80px;
+//     width: 100%;
+//   }
+//   .sidebar {
+//     ul {
+//       li {
+//         a {
+//         }
+//         .hover {
+//           background-color: rgba(142, 77, 160, 0.63);
+//           padding-top: 0.5rem;
+//           padding-bottom: 0.5rem;
+//           color: #fff;
+//           border-radius: 30px 0 0 30px;
+//         }
+//         .activo {
+//           background-color: rgb(245, 245, 245);
+//           padding-top: 0.5rem;
+//           padding-bottom: 0.5rem;
+//           color: color("empresa");
+//           border-radius: 30px 0 0 30px;
+//         }
+//       }
+//     }
+//   }
+
+//   #nav-toggle:checked {
+//     + .sidebar {
+//       width: 80px;
+//       .sidebar-brand {
+//         padding-left: 1rem;
+//         text-align: center;
+//         .nom-simetrika {
+//           display: none;
+//         }
+//         label {
+//           display: block;
+//           width: 80%;
+//           text-align: center;
+//           margin-left: -20px;
+//           span {
+//             display: block;
+//             width: 100%;
+//             font-size: 25px;
+//           }
+//         }
+//       }
+//       ul {
+//         li {
+//           padding-left: 1rem;
+//           text-align: center;
+//           a {
+//             padding-left: 0;
+//             span {
+//               &:last-child {
+//                 display: none;
+//               }
+//             }
+//           }
+//           .hover {
+//             background-color: rgba(142, 77, 160, 0.63);
+//             padding-top: 0.5rem;
+//             padding-bottom: 0.5rem;
+//             color: #fff;
+//             border-radius: 30px 0 0 30px;
+//           }
+//           .activo {
+//             background-color: rgb(245, 245, 245);
+//             padding-top: 0.5rem;
+//             padding-bottom: 0.5rem;
+//             color: color("empresa");
+//             border-radius: 30px 0 0 30px;
+//           }
+//         }
+//       }
+//       .sidebar-menu {
+//       }
+//     }
+//     ~ header {
+//       width: 100%;
+//       left: 0px;
+
+//     }
+//     ~ .main {
+//       width: calc(100% - 80px);
+//       margin-left: 80px;
+//       justify-content: space-between;
+//     }
+//   }
+// }
+// @media only screen and(max-width: 568px) {
+//   .main {
+//     position: relative;
+//     margin-left: 0px;
+//     margin-top: 80px;
+//     width: 100%;
+//     z-index: 1;
+//   }
+
+//   #nav-toggle:checked {
+//     + .sidebar {
+//       width: 80px;
+//       .sidebar-brand {
+//         padding-left: 1rem;
+//         text-align: center;
+//         .nom-simetrika {
+//           display: none;
+//         }
+//         label {
+//           display: block;
+//           width: 80%;
+//           text-align: center;
+//           margin-left: -20px;
+//           span {
+//             display: block;
+//             width: 100%;
+//             font-size: 25px;
+//           }
+//         }
+//       }
+//       ul {
+//         li {
+//           padding-left: 1rem;
+//           text-align: center;
+//           a {
+//             padding-left: 0;
+//             span {
+//               &:last-child {
+//                 display: none;
+//               }
+//             }
+//           }
+//         }
+//       }
+//       .sidebar-menu {
+//       }
+//     }
+//     ~ header {
+//       width: 100%;
+//       left: 0px;
+
+//     }
+//     ~ .main {
+//       width: calc(100% - 80px);
+//       margin-left: 80px;
+//     }
+//   }
+// }

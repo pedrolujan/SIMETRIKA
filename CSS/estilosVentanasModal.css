@@ -1,0 +1,610 @@
+h5 {
+  background-color: #7b3090;
+  padding: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+
+#formulariosBuscarCurso h5 {
+  background-color: #7b3090;
+  padding: 5px;
+  color: #fff;
+}
+
+#formulariosBuscarCurso .group-filtroBusq-curso select {
+  height: 32px;
+  outline: none;
+  border-radius: 5px;
+}
+
+#formulariosBuscarCurso .contenedorBtnModal #btnCapturarCursos {
+  display: block;
+  padding: 5px 0;
+  border-radius: 10px;
+  outline: none;
+  border: solid 1px #7b3090;
+  font-size: 12px;
+  color: #7b3090;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 50%;
+}
+
+#formulariosBuscarCurso .contenedorBtnModal #btnCapturarCursos span {
+  font-size: 14px;
+  margin-right: 2px;
+}
+
+#formulariosBuscarCurso .contenedorBtnModal #btnCapturarCursos:hover {
+  background-color: #7b3090;
+  color: #fff;
+}
+
+#formularioAsignacionManual h4 {
+  background-color: #7b3090;
+  color: #fff;
+}
+
+#formularioAsignacionManual .contenedorAgignanarProspectos {
+  border-top: 1px solid #7b3090;
+}
+
+#formularioAsignacionManual div div:first-child {
+  border-right: solid 1px #ccc;
+}
+
+#formularioAsignacionManual div div .contenedorProspectos div label {
+  cursor: pointer;
+  border-bottom: 1px dashed #ccc;
+}
+
+#formularioAsignacionManual div div input {
+  border: none;
+  outline: none;
+  border-bottom: solid 1px #7b3090;
+  border-left: solid 1px #7b3090;
+  background: none;
+  padding: 0 5px;
+}
+
+#formularioAsignacionManual div div .group-combo {
+  padding: 10px 5px;
+  border: none;
+}
+
+#formularioAsignacionManual div div .group-combo label {
+  font-size: 20px;
+  border-bottom: 1px solid #7b3090;
+  color: #363535;
+}
+
+#formularioAsignacionManual div div .group-combo select {
+  height: 32px;
+  border-radius: 5px;
+  outline: none;
+  border: solid 1px #7b3090;
+  cursor: pointer;
+}
+
+#formularioAsignacionManual div div .group-vacio {
+  height: 50px;
+}
+
+#formularioAsignacionManual div div .group-boton button {
+  display: block;
+  padding: 10px 0;
+  border-radius: 10px;
+  outline: none;
+  border: solid 1px #7b3090;
+  font-size: 12px;
+  color: #7b3090;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#formularioAsignacionManual div div .group-boton button span {
+  font-size: 14px;
+  margin-right: 2px;
+}
+
+#formularioAsignacionManual div div .group-boton button:hover {
+  background-color: #7b3090;
+  color: #fff;
+}
+
+.modal {
+  background: none;
+  background-color: #fff;
+}
+
+.modal h6 {
+  background-color: #7b3090;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+}
+
+#formulariosGuardarPagoCuota {
+  max-width: 70%;
+}
+
+#formulariosDetallePago {
+  max-width: 70%;
+  background: #fff;
+}
+
+#formulariosDetallePago div {
+  border-top: none;
+}
+
+#formulariosDetallePago div div h6 {
+  padding: 3px;
+  border: none;
+  border: solid 1px #7b3090;
+  border-radius: 3px;
+  color: #7b3090;
+  background: #dadada;
+}
+
+#formulariosDetallePago div div div div p {
+  font-weight: 600;
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 0;
+}
+
+#formulariosDetallePago div div div div input {
+  border: none;
+  outline: none;
+  border-bottom: solid 1px #1e73be;
+  background: none;
+  color: #666666;
+  font-size: 14px;
+}
+
+#formulariosDetallePago div div div .group-imagenBoucher-consultas {
+  width: 500px;
+  height: 500px;
+}
+
+#formulariosDetallePago div div div .group-imagenBoucher-consultas img {
+  height: inherit;
+  width: inherit;
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
+}
+
+#formulariosGuardarPagoCuota div div div div div p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #7b3090;
+}
+
+#formulariosGuardarPagoCuota div div div div div span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #7b3090;
+}
+
+#formulariosGuardarPagoCuota div div div div div input {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #7b3090;
+}
+
+#formulariosGuardarPagoCuota div div div div div div {
+  border-bottom: 1px solid #7b3090;
+}
+
+#formulariosGuardarPagoCuota div div div div div div input {
+  border: none;
+  outline: none;
+}
+
+#formulariosGuardarPagoCuota div div div div div .divImporteCuota {
+  background-color: #e8f0fe;
+}
+
+#formulariosGuardarPagoCuota div div div div div .divImporteCuota input {
+  background: none;
+}
+
+#formulariosGuardarPagoCuota div div div div div select {
+  cursor: pointer;
+  height: 32px;
+  outline: none;
+}
+
+#formulariosGuardarPagoCuota div div .contenedorRecibo {
+  width: 300px;
+  height: 400px;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid 1px #d3d2d2;
+}
+
+#formulariosGuardarPagoCuota div div .contenedorRecibo img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
+}
+
+#formulariosGuardarPagoCuota div div .contenedorRecibo .divBoton {
+  position: absolute;
+  margin: -1px auto auto -1px;
+  width: 300px;
+  height: 400px;
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#formulariosGuardarPagoCuota div div .contenedorRecibo .divBoton div {
+  text-align: center;
+}
+
+#formulariosGuardarPagoCuota div div .contenedorRecibo .divBoton div span {
+  font-size: 30px;
+}
+
+#formulariosGuardarPagoCuota div div .contenedorRecibo .divBoton div p {
+  font-size: 12px;
+}
+
+#formulariosGuardarPagoCuota div div .contenedorRecibo .divBoton:hover span {
+  font-size: 40px;
+}
+
+#formulariosGuardarPagoCuota div div .contenedorRecibo .divBoton:active span {
+  font-size: 30px;
+}
+
+#formulariosGuardarPagoCuota div div .contenedorRecibo:hover .divBoton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#formulariosGuardarPagoCuota div .contenedorBoton {
+  width: 100%;
+}
+
+#formulariosGuardarPagoCuota div .contenedorBoton .btnGuardarPagoDeCuota {
+  display: block;
+  padding: 10px 60px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7b3090), color-stop(#1e73be), to(#7b3090));
+  background-image: linear-gradient(to right, #7b3090, #1e73be, #7b3090);
+  background-size: 200%;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#formulariosGuardarPagoCuota div .contenedorBoton .btnGuardarPagoDeCuota:hover {
+  background-position: right;
+}
+
+#frmReguistrarProspectos .contenedorProspecto {
+  background-color: #ede7f6;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto {
+  position: relative;
+  margin-left: 42%;
+  padding: 0;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .row {
+  width: 100%;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .row .contenGeneralImg {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .row .contenGeneralImg .contenImg {
+  width: 100%;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .row .contenGeneralImg .contenImg img {
+  width: 100%;
+  margin: 0;
+  border: solid 1px #a3a2a2;
+  border-radius: 8px;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .contenGeneralInfo {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: solid 10px #7b3090;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .contenGeneralInfo .contenInfoEvento .titulo_evento {
+  font-size: 32px;
+  font-weight: 400;
+  color: #202124;
+  margin-bottom: 3px;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .contenGeneralInfo .contenInfoEvento .DescripcionEvento {
+  white-space: pre-line;
+  display: block;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  color: #202124;
+  margin-top: 0;
+  padding: 10px;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-top: solid 1px #457992;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px 15px;
+  width: 100%;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja div input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #adadad;
+  width: 50%;
+  padding: 5px;
+  font-size: 14px;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja input:focus {
+  border-bottom: 2px solid #7b3090;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja span {
+  font-size: 16px;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+  color: #555555;
+  font-weight: 400;
+  width: auto;
+  word-break: break-word;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja .inputErrpor {
+  border-bottom: solid 2px #dc3545;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja .inputExito {
+  border-bottom: solid 2px #28a745;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja .comboError {
+  border: solid 10px #dc3545;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja .comboExito {
+  border: solid 10px #28a745;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja .mensaje {
+  font-size: 12px;
+  margin-top: -10px;
+  margin-left: 10px;
+  display: none;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja .mensaje-exito {
+  display: none;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja .mensaje-error {
+  display: block;
+  color: #dc3545;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja .mensaje-errorExistente {
+  display: block;
+  color: #28a745;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja .datosPersonales {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja .datosPersonales input {
+  width: 90%;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .divCaja .datosPersonales select {
+  border: none;
+  border: 1px solid #adadad;
+  border-radius: 2px;
+  outline: none;
+  width: 80%;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto #contenBoton div #btn_guardarProspectos {
+  display: block;
+  padding: 10px 60px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7b3090), color-stop(#1e73be), to(#7b3090));
+  background-image: linear-gradient(to right, #7b3090, #1e73be, #7b3090);
+  background-size: 200%;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin: auto;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto #contenBoton div #btn_guardarProspectos:hover {
+  background-position: right;
+}
+
+#frmReguistrarProspectos .formulario__validacion-estado {
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0;
+}
+
+#formularioNuevoEvento div .contenedorLLanartemplate {
+  position: relative;
+}
+
+#formularioNuevoEvento div .contenedorLLanartemplate img {
+  padding: 2px;
+  width: 300px;
+  height: 200px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+#formularioNuevoEvento div .contenedorLLanartemplate .contentbtnCertificados {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 300px;
+  position: absolute;
+  border-radius: 5px;
+  height: 200px;
+  cursor: pointer;
+  margin-top: 1px;
+  margin-left: 1px;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 28px;
+  color: #fff;
+}
+
+#formularioNuevoEvento div .contenedorLLanartemplate:hover .contentbtnCertificados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#formularioNuevoEvento div .contenedorLLanartemplate:active .contentbtnCertificados {
+  font-size: 20px;
+}
+
+.modal .contenedorBoton .boton {
+  display: block;
+  padding: 10px 60px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7b3090), color-stop(#1e73be), to(#7b3090));
+  background-image: linear-gradient(to right, #7b3090, #1e73be, #7b3090);
+  background-size: 200%;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.modal .contenedorBoton .boton:hover {
+  background-position: right;
+}
+
+@media screen and (max-width: 768px) {
+  #formulariosDetallePago {
+    max-width: 90%;
+  }
+  #formulariosGuardarPagoCuota {
+    max-width: 90%;
+  }
+  #frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .contenedor_formulario .contenGeneralInfo .contenInfoEvento .titulo_evento {
+    font-size: 21px;
+  }
+  #frmReguistrarProspectos .contenedorProspecto .contenedorFormProspecto .contenedor_formulario .contenGeneralInfo .contenInfoEvento .DescripcionEvento {
+    font-size: 13px;
+  }
+  #formularioNuevoEvento div .contenedorLLanartemplate {
+    position: relative;
+  }
+  #formularioNuevoEvento div .contenedorLLanartemplate img {
+    padding: 2px;
+    width: 250px;
+    height: 150px;
+  }
+  #formularioNuevoEvento div .contenedorLLanartemplate .contentbtnCertificados {
+    width: 250px;
+    position: absolute;
+    height: 150px;
+    margin-top: 1px;
+    margin-left: 1px;
+  }
+}
+/*# sourceMappingURL=estilosVentanasModal.css.map */

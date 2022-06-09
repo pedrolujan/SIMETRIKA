@@ -1,0 +1,200 @@
+.blocker {
+  position: fixed;
+  /* justify-content: center; */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 300;
+  padding-top: 30px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.blocker:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.05em;
+}
+.blocker.behind {
+  background-color: transparent;
+}
+.modal {
+  display: none;
+  vertical-align: middle;
+  position: relative;
+  z-index: 32;
+  margin: 30px 0px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  background: rgb(255, 255, 255);
+  padding: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px #000;
+  -moz-box-shadow: 0 0 10px #000;
+  -o-box-shadow: 0 0 10px #000;
+  -ms-box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #000;
+  transition: ease 0.4s all;
+
+  /* opacity: 0; */
+  /* text-align: center; */
+}
+
+.modal .conten-boton a{
+  background-color: #7B3090;
+  color: #fff;
+}
+.modal .conten-boton a.second{
+  background-color:#fff ;
+  border-bottom: solid 1px #7B3090;
+  color: #7B3090;
+}
+.modal .conten-boton a.second:hover{
+  background:  #dcd1df;
+}
+.modalAsignarProspectos {
+  max-width: 80%;
+}
+.modal.efectos {
+  display: inline-block;
+  background-color: teal;
+  opacity: 1;
+}
+/* #formulariosBuscarClienteConCuotas{
+  max-width: 60%;
+} */
+.modal-super {
+  /* background-color: rgb(21, 255, 0) !important; */
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: auto;
+  right: 10px;
+  z-index: 305;
+  /* margin: 30px 0px; */
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 320px;
+  height: 50%;
+  overflow-y: auto;
+  background: rgb(255, 255, 255) !important;
+  padding: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px #000;
+  -moz-box-shadow: 0 0 10px #000;
+  -o-box-shadow: 0 0 10px #000;
+  -ms-box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #000;
+}
+.modal-super>.header-modal{
+  background-color: #7B3090;
+}
+.modal-super>div h6{
+  color: #fff;
+  padding: 2px;
+}
+.modal-super>div span{
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  color: #7B3090;
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.modal a.close-modal {
+  position: absolute;
+  top: -3px;
+  right: -4px;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-indent: -9999px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: center center;
+  background-image: url("../../IMAGENES/icons/close.png?kl");
+  z-index: 2;
+}
+.modal-spinner {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 12px 0px;
+  border-radius: 5px;
+  background-color: #111;
+  height: 20px;
+}
+.modal-spinner > div {
+  /* border-radius: 100px;
+  background-color: #fff;
+  height: 20px;
+  width: 2px;
+  margin: 0 1px;
+  display: inline-block;
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out; */
+}
+.modal-spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+.modal-spinner .rect3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+.modal-spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+@media screen and (max-width: 900px) {
+  .modal {
+    max-width: 90%;
+  }
+}
+@-webkit-keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.5);
+    background-color: aqua;
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+@keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.5);
+    -webkit-transform: scaleY(0.5);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}
